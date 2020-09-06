@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>ES6学习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="####let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。">
+  <meta name="description" content="let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。let不像var那样会发生“变量提升”现象。所以，变量一定要在声明后使用，否则报错。 变量的解构赋值数组示例   12345var [a, b, c] = [1, 2, 3];let [foo, [[bar], baz]] = [1, [[2], 3]];foo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6学习">
 <meta property="og:url" content="http://yoursite.com/2019/07/31/ES6学习/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="####let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。">
+<meta property="og:description" content="let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。let不像var那样会发生“变量提升”现象。所以，变量一定要在声明后使用，否则报错。 变量的解构赋值数组示例   12345var [a, b, c] = [1, 2, 3];let [foo, [[bar], baz]] = [1, [[2], 3]];foo">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-02T01:57:40.532Z">
+<meta property="og:updated_time" content="2020-09-06T05:58:51.060Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6学习">
-<meta name="twitter:description" content="####let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。">
+<meta name="twitter:description" content="let 和const命令ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。let不像var那样会发生“变量提升”现象。所以，变量一定要在声明后使用，否则报错。 变量的解构赋值数组示例   12345var [a, b, c] = [1, 2, 3];let [foo, [[bar], baz]] = [1, [[2], 3]];foo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,7 +174,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>####let 和const命令<br>ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。</p>
+        <h4 id="let-和const命令"><a href="#let-和const命令" class="headerlink" title="let 和const命令"></a>let 和const命令</h4><p>ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。<br>let不像var那样会发生“变量提升”现象。所以，变量一定要在声明后使用，否则报错。</p>
+<h4 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h4><p>数组示例  </p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">let [foo, <span class="string">[[bar], baz]]</span> = [<span class="number">1</span>, <span class="string">[[2], 3]]</span>;</span><br><span class="line">foo // <span class="number">1</span></span><br><span class="line">bar // <span class="number">2</span></span><br><span class="line">baz // <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p>对象结构示例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 
       
 
